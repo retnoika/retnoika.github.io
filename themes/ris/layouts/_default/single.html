@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<div class="row blog-nav">
+  <div class="col">
+    <a href="/blog/"><i class="fas fa-arrow-left"></i>Back to Blog</a>
+  </div>
+</div>
+<div class="row blog justify-content-md-center">
+  <div class="col col-md-9 blog-item blog-post">
+    <div class="text-center text-center-xs fadeIn">
+      <h3>{{ .Title }}</h3>
+      <div class="meta-date">{{ .Date.Format "2 January 2006" }}</div>
+    </div>
+    <div>
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
