@@ -1,0 +1,391 @@
+/* ======================================== */
+/* Theme Name: RIS */
+/* Version: 1.0.1 */
+/* License: MIT License ; */
+/* Author: Retno Ika */
+/* Contact: safitri.retnoika@gmail.com */
+/* Website: https://retnoika.github.io */
+/* ======================================== */
+
+
+/*
+ * Globals
+ */
+::selection {
+  color: #fff;
+  background-color: #513969!important;
+}
+
+::moz-selection {
+  color: #fff;
+  background-color: #513969!important;
+}
+
+h1, .h1 {
+  font-size: 2.75rem;
+}
+
+h2, .h2 {
+  font-size: 2.25rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.75rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+}
+
+blockquote {
+  border-left: 2px solid #E32A66;
+  padding-left: 2rem;
+}
+
+@media all and (max-width: 767px) {
+  br {
+    display: none;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+  40% {-webkit-transform: translateY(-30px);} 
+  60% {-webkit-transform: translateY(-15px);} 
+} 
+
+@keyframes bounce { 
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-30px);} 
+  60% {transform: translateY(-15px);} 
+}
+
+.bounce { 
+  -webkit-animation-name: bounce; 
+  animation-name: bounce; 
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; 
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+
+/*
+ * Fonts
+ */
+@font-face {font-family: "Overpass Thin"; src: url(../fonts/Overpass/Overpass-ExtraLight.ttf);font-weight: 200;}
+@font-face {font-family: "Overpass Thin Italic"; src: url(../fonts/Overpass/Overpass-ExtraLightItalic.ttf); font-style: italic; font-weight: 200;}
+@font-face {font-family: "Overpass Regular"; src: url(../fonts/Overpass/Overpass-Regular.ttf);font-weight: 400;}
+@font-face {font-family: "Overpass Italic"; src: url(../fonts/Overpass/Overpass-Italic.ttf); font-style: italic; font-weight: 400;}
+@font-face {font-family: "Overpass Bold"; src: url(../fonts/Overpass/Overpass-Bold.ttf);font-weight: 700;}
+@font-face {font-family: "Overpass Black"; src: url(../fonts/Overpass/Overpass-Black.ttf);font-weight: 900;}
+
+
+/* Links */
+a {
+  color: #E32A66;
+  text-decoration: none;
+  transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+a:focus,
+a:hover {
+  color: #343536;
+  text-decoration: none;
+  transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+/* Buttons */
+
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: "Overpass Regular", Arial, sans-serif;
+  color: #2C2A2B;
+}
+
+/*
+ * Header
+ */
+.navbar {
+  padding: 2rem 0;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .navbar-brand {
+    float: left;
+    max-width: 50px;
+  }
+
+  .navbar-nav {
+    padding-top: 1.5rem;
+  }
+
+  .navbar-nav li {
+    display: block;
+    padding: .75rem .5rem;
+  }
+
+  .navbar-nav li a {
+    font-family: "Overpass Regular", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #343536;
+  }
+
+  .navbar-nav li a:hover {
+    color: #E32A66;
+    transition: all .5s linear;
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      -o-transition: all .5s linear;
+  }
+  .navbar-nav li.active a {
+    color: #E32A66;
+  }
+}
+
+@media (min-width: 48em) {
+  .navbar-brand {
+    float: left;
+    max-width: 50px;
+  }
+
+  .navbar-nav li {
+    display: block;
+    padding-top: .5rem;
+    padding-left: 3.5rem;
+  }
+
+  .navbar-nav li a {
+    font-family: "Overpass Regular", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #343536;
+  }
+
+  .navbar-nav li a:hover {
+    color: #E32A66;
+    transition: all .5s linear;
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      -o-transition: all .5s linear;
+  }
+  .navbar-nav li.active a {
+    color: #E32A66;
+  }
+}
+
+/*
+ * Hero
+ */
+.hero {
+  min-height: 450px;
+  padding: 80px 0;
+}
+
+.hero .greeting {
+  padding-right: 2.5rem;
+}
+
+.hero .greeting span {
+  border-bottom: 4px dashed #E32A66;
+}
+
+.hero h2 {
+  line-height: 3.45rem;
+  font-family: "Overpass Bold", Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+.hero h6 {
+  font-family: "Overpass Thin", Arial, sans-serif;
+  line-height: 2.25rem;
+  font-weight: 300;
+  padding-top: 8px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 3.5rem 0;
+  }
+  .hero h2 {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+    font-family: "Overpass Bold", Arial, sans-serif;
+    letter-spacing: -1px;
+  }
+  .hero h6 {
+    margin-bottom: 48px;
+  }
+}
+
+
+/*
+ * Porto
+ */
+.porto {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 48em) {
+  .porto-grid {
+    padding: 1rem 1rem;
+  }
+  .one {background-color: #E4E9FC;height: 35em;margin-right: 30px;padding: 1.5rem;}
+  .two {background-color: #FFF9C9;height: 35em;padding: 1.5rem;}
+  .three {background-color: #CFE3A6;height: 35em;margin-right: 30px;padding: 1.5rem;}
+  .four {background-color: #F8AFC7;height: 35em;padding: 1.5rem;}
+}
+
+@media (max-width: 576px) {
+  .porto-grid {
+    padding: 2rem 1rem;
+  }
+  .one {background-color: #E4E9FC;height: 25em;margin-bottom: 2rem;padding: 1.5rem;}
+  .two {background-color: #FFF9C9;height: 25em;padding: 1.5rem;}
+  .three {background-color: #CFE3A6;height: 25em;margin-bottom: 2rem;padding: 1.5rem;}
+  .four {background-color: #F8AFC7;height: 25em;padding: 1.5rem;}
+}
+
+/*
+ * Blog
+ */
+.blog {
+  padding: 5rem 0;
+}
+
+.blog-area ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.blog-item li a {
+  color: #2C2A2B;
+}
+.blog-item li a:hover {
+  color: #E32A66;
+}
+.blog-item .meta-date {
+  color: #D1CACC;
+  text-transform: uppercase; 
+  font-size: 0.85rem;
+  padding-top: 0.75rem;
+  padding-bottom: 2.75rem;
+}
+.blog-item p {
+  color: #757374;
+}
+
+.blog-nav {
+  padding: 2rem 0;
+}
+.blog-nav .fas {
+  padding-right: 0.85rem;
+}
+
+.blog-post h2 {
+  font-family: "Overpass Bold", Arial, sans-serif;
+  line-height: 1.5;
+}
+.blog-post h3 {
+  font-family: "Overpass Bold", Arial, sans-serif;
+  line-height: 1.4;
+}
+.blog-post p {
+  padding: 1rem 0;
+  font-family: "Overpass Thin", Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+.blog-post img {
+  padding: 1rem 0;
+}
+
+/*
+ * Footer
+ */
+footer {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  border-top: 1px solid #E9E7E8;
+  text-align: center;
+  background-color: rgba(227,42,102,1);
+  color: #f9fafc;
+}
+
+footer p {
+  padding: .5rem;
+  font-family: "Overpass Thin", Arial, sans-serif;
+}
+
+.social-list li a {
+  font-size: 1.5rem;
+  color: #f9fafc;
+  padding: 0 1.5rem;
+  transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.social-list li a:hover {
+  color: #343536;
+  transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.navbar-toggler .fa-bars {
+  color: #E32A66;
+}
