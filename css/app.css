@@ -45,9 +45,11 @@ h6, .h6 {
   font-size: 1.25rem;
 }
 
-blockquote {
+blockquote p {
   border-left: 2px solid #E32A66;
-  padding-left: 2rem;
+  padding-left: 2rem!important;
+  font-family: "Satisfy", cursive !important;
+  font-size: 1.75rem!important;
 }
 
 @media all and (max-width: 767px) {
@@ -107,6 +109,8 @@ blockquote {
 @font-face {font-family: "Overpass Italic"; src: url(../fonts/Overpass/Overpass-Italic.ttf); font-style: italic; font-weight: 400;}
 @font-face {font-family: "Overpass Bold"; src: url(../fonts/Overpass/Overpass-Bold.ttf);font-weight: 700;}
 @font-face {font-family: "Overpass Black"; src: url(../fonts/Overpass/Overpass-Black.ttf);font-weight: 900;}
+
+@font-face {font-family: "Satisfy"; src: url(../fonts/Satisfy/Satisfy-Regular.ttf);font-weight: 400;}
 
 
 /* Links */
@@ -349,6 +353,10 @@ body {
 }
 .blog-post img {
   padding: 1rem 0;
+}
+
+.blog-post sup a {
+  font-family: "Overpass Bold", Arial, sans-serif;
 }
 
 /*
