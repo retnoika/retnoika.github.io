@@ -22,15 +22,15 @@
 }
 
 h1, .h1 {
-  font-size: 2.75rem;
+  font-size: 3.55rem;
 }
 
 h2, .h2 {
-  font-size: 2.25rem;
+  font-size: 2.95rem;
 }
 
 h3, .h3 {
-  font-size: 2rem;
+  font-size: 2.55rem;
 }
 
 h4, .h4 {
@@ -132,6 +132,7 @@ a:hover {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
 }
+
 
 /* Buttons */
 
@@ -245,6 +246,7 @@ body {
 
 .hero h2 {
   line-height: 3.45rem;
+  font-size: 2.25rem;
   font-family: "Overpass Bold", Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -303,7 +305,7 @@ body {
  * Blog
  */
 .blog {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .blog-area ul {
@@ -326,8 +328,9 @@ body {
   padding-top: 0.75rem;
   padding-bottom: 2.75rem;
 }
-.blog-item p {
-  color: #757374;
+.blog-item p, 
+.blog-post li {
+  color: #535551;
 }
 
 .blog-nav {
@@ -339,24 +342,50 @@ body {
 
 .blog-post h2 {
   font-family: "Overpass Bold", Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .blog-post h3 {
   font-family: "Overpass Bold", Arial, sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+.blog-post h4 {
+  font-family: "Overpass Bold", Arial, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.blog-post .post-item {
+  margin: 4rem 0;
 }
 .blog-post p {
-  padding: 1rem 0;
-  font-family: "Overpass Thin", Arial, sans-serif;
+  margin-bottom: 2rem;
+  font-family: "Overpass Regular", Arial, sans-serif;
   font-size: 1.25rem;
   line-height: 1.6;
 }
 .blog-post img {
   padding: 1rem 0;
 }
-
 .blog-post sup a {
   font-family: "Overpass Bold", Arial, sans-serif;
+}
+.blog-post i {
+  font-style: italic;
+  font-family: "Overpass Thin", Arial, sans-serif;
+}
+.blog-post span {
+  color: #E32A66;
+}
+.blog-post .empty-space {
+  height: 3rem;
+}
+.postimage {
+  margin-bottom: 2rem;
+}
+.blog-post ul li,
+.blog-post ol li {
+  font-family: "Overpass Regular", Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 /*
